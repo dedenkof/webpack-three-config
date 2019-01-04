@@ -1,4 +1,13 @@
 {
+  "name": "webpack-three-config",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/dedenkof/webpack-three-config.git",
+  "author": "Volodymyr Dedenko <dedenkof@ukr.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=dev webpack --config ./configs/webpack.config.dev.js"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.4",
     "babel": "^6.23.0",
