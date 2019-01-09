@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ROOT_DIR = path.resolve(__dirname, '../');
 const SRC_DIR = path.resolve(ROOT_DIR, 'src');
+process.traceDeprecation = true;
 module.exports = {
     entry: [
         'babel-polyfill',
@@ -45,7 +46,9 @@ module.exports = {
                 CUSTOM_HOST: JSON.stringify(process.env.CUSTOM_HOST),
                 HTTPS: JSON.stringify(process.env.HTTPS),
                 RUBY_BACKEND: JSON.stringify(process.env.RUBY_BACKEND),
+
             }
+
         }),
     ]
 };
